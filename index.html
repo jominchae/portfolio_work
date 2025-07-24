@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - 조민채</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&family=Pinyon+Script&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <section id="intro" class="intro-section">
+      <div class="intro-content">
+        <!-- 반짝이는 별 아이콘 -->
+        <div class="sparkle-icon">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z"
+              fill="currentColor"
+            />
+          </svg>
+        </div>
+
+        <img src="images/imac.png" alt="imac" class="imac-image" />
+        <div class="intro-text">
+          <h1 class="whoami-title">
+            <span class="w-deco">W</span><span class="pixel-rest">HO AM l</span>
+          </h1>
+        </div>
+
+        <div class="search-bar-wrap">
+          <div class="portfolio-search-bar">
+            <span>웹디자이너 조민채 포트폴리오</span>
+            <!-- <button class="search-btn">SEARCH</button> -->
+          </div>
+          <button id="startBtn" class="start-button">START</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 아이맥 프레임 내부 요소들 -->
+    <div class="imac-frame-content">
+      <!-- 상단 우측 3개 버튼 -->
+      <div class="top-buttons">
+        <button class="window-btn minimize-btn">-</button>
+        <button class="window-btn maximize-btn">□</button>
+        <button class="window-btn close-btn">×</button>
+      </div>
+
+      <!-- 아이맥 프레임 내부 쓰레기통 -->
+      <div class="imac-trash-icon">
+        <svg
+          width="30"
+          height="30"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M3 6H21"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M8 6V4C8 3.44772 8.44772 3 9 3H15C15.5523 3 16 3.44772 16 4V6"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M19 6V20C19 20.5523 18.5523 21 18 21H6C5.44772 21 5 20.5523 5 20V6"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M10 11V16"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M14 11V16"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar-nav">
+      <ul>
+        <li>
+          <a href="#intro" class="nav-link">
+            <img src="images/icon/main_icon.png" alt="Home" />
+            <span>HOME</span>
+          </a>
+        </li>
+        <li>
+          <a href="#about" class="nav-link">
+            <img src="images/icon/main_icon.png" alt="About" />
+            <span>ABOUT</span>
+          </a>
+        </li>
+        <li>
+          <a href="#coding" class="nav-link">
+            <img src="images/icon/main_icon.png" alt="Coding" />
+            <span>CODING</span>
+          </a>
+        </li>
+        <li>
+          <a href="#design" class="nav-link">
+            <img src="images/icon/main_icon.png" alt="Design" />
+            <span>DESIGN</span>
+          </a>
+        </li>
+        <li>
+          <a href="#contact" class="nav-link">
+            <img src="images/icon/main_icon.png" alt="contact" />
+            <span>CONTACT</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container about-content">
+        <div class="about-text">
+          <div class="browser-window">
+            <div class="browser-bar">
+              <div class="traffic-lights">
+                <div class="traffic-light red"></div>
+                <div class="traffic-light yellow"></div>
+                <div class="traffic-light green"></div>
+              </div>
+              <div class="browser-buttons">
+                <button class="browser-button">SEARCH</button>
+                <button class="browser-button">START</button>
+              </div>
+            </div>
+            <!-- 메인 콘텐츠 -->
+            <div class="content-area">
+              <div class="hello-text">HELLO</div>
+
+              <div class="main-layout">
+                <!-- 왼쪽 프로필 섹션 -->
+                <div class="profile-section">
+                  <div class="profile-image">
+                    <img src="images/profile.jpg" alt="Profile Image" />
+                  </div>
+                  <div class="profile-name">Jo Min Chae</div>
+                </div>
+
+                <!-- 오른쪽 정보 섹션 -->
+                <div class="info-section">
+                  <!-- 개인정보 카드 -->
+                  <div class="info-card">
+                    <h3>조민채</h3>
+                    <div class="pink-line"></div>
+                    <div class="date">2002.06.17</div>
+                    <div class="contact">010-5814-3314</div>
+                    <div class="email">minchae617@naver.com</div>
+                  </div>
+
+                  <!-- 스킬 섹션 -->
+                  <div class="skills-section">
+                    <div class="skills-title">TOOL SKILLS</div>
+
+                    <div class="skills-grid">
+                      <div class="skill-category">
+                        <h4>DESIGN</h4>
+                        <div class="skill-icons">
+                          <div class="skill-icon ps">Ps</div>
+                          <img
+                            src="images/icon/photoshop.png"
+                            alt="Photoshop"
+                          />
+                          <div class="skill-icon ai">Ai</div>
+                          <img
+                            src="images/icon/illustrator.png"
+                            alt="Illustrator"
+                          />
+                          <div class="skill-icon figma">Figma</div>
+                          <img src="images/icon/figma.jpg" alt="Figma" />
+                          <div class="skill-icon indesign">Id</div>
+                          <img src="images/icon/indesign.png" alt="InDesign" />
+                        </div>
+                      </div>
+                      <div class="skill-category">
+                        <h4>CODING</h4>
+                        <div class="skill-icons">
+                          <div class="skill-icon html">HTML</div>
+                          <img src="images/icon/html.png" alt="HTML" />
+                          <div class="skill-icon css">CSS</div>
+                          <img src="images/icon/css.png" alt="CSS" />
+                          <div class="skill-icon js">JS</div>
+                          <img src="images/icon/js.png" alt="JavaScript" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 이력서 버튼 -->
+                  <div class="resume-box">
+                    <button class="resume-button">📄 이력서</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- coding Section -->
+    <section id="coding" class="coding-section">
+      <div class="coding-container">
+        <div class="browser-window">
+          <div class="browser-bar">
+            <div class="traffic-lights">
+              <div class="traffic-light red"></div>
+              <div class="traffic-light yellow"></div>
+              <div class="traffic-light green"></div>
+            </div>
+            <div class="browser-url-bar">
+              <div class="nav-buttons">
+                <button
+                  class="nav-btn prev-btn"
+                  onclick="changeCodingProject(-1)"
+                >
+                  ←
+                </button>
+                <button
+                  class="nav-btn next-btn"
+                  onclick="changeCodingProject(1)"
+                >
+                  →
+                </button>
+              </div>
+              <div class="url-input">
+                <span id="coding-project-url">CODING PAGE</span>
+              </div>
+              <button class="share-btn">⤴</button>
+            </div>
+          </div>
+
+          <!-- 코딩 포트폴리오 컨텐츠 -->
+          <div class="coding-portfolio-content">
+            <div class="coding-portfolio-header">
+              <div class="coding-portfolio-counter">
+                <span id="current-coding-project">1</span> /
+                <span id="total-coding-projects">3</span>
+              </div>
+            </div>
+
+            <div class="coding-portfolio-gallery">
+              <!-- 코딩 프로젝트 1 -->
+              <div class="coding-project-item active" data-project="1">
+                <div class="coding-project-preview">
+                  <div class="coding-project-image">
+                    <div class="placeholder-image">
+                      <img src="images/clone_coding.jpg" alt="Clone Coding" />
+                    </div>
+                  </div>
+                  <div class="coding-project-info">
+                    <h3 class="coding-project-title">Clone Coding</h3>
+                    <p class="coding-project-description">
+                      HTML, CSS, JavaScript를 사용한 프로토타입 제작 제작
+                    </p>
+                    <div class="coding-project-tags">
+                      <span class="tag">HTML</span>
+                      <span class="tag">CSS</span>
+                      <span class="tag">JavaScript</span>
+                    </div>
+                    <button
+                      class="view-coding-project-btn"
+                      onclick="openCodingProject('project1')"
+                    >
+                      GitHub에서 보기
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 코딩 프로젝트 2 -->
+              <div class="coding-project-item" data-project="2">
+                <div class="coding-project-preview">
+                  <div class="coding-project-image">
+                    <div class="placeholder-image">
+                      <img
+                        src="images/airbnb_redesign.jpg"
+                        alt="Airbnb Web Re-design"
+                      />
+                    </div>
+                  </div>
+                  <div class="coding-project-info">
+                    <h3 class="coding-project-title">Airbnb Web Re-design</h3>
+                    <p class="coding-project-description">
+                      에어비앤비의 감성을 유지하면서 사용자 경험(UX)과 정보
+                      구조(UI)을 개선한 리디자인 프로젝트
+                    </p>
+                    <div class="coding-project-tags">
+                      <span class="tag">HTML</span>
+                      <span class="tag">CSS</span>
+                      <span class="tag">JavaScript</span>
+                    </div>
+                    <button
+                      class="view-coding-project-btn"
+                      onclick="openCodingProject('project2')"
+                    >
+                      GitHub에서 보기
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 코딩 프로젝트 3 -->
+              <div class="coding-project-item" data-project="3">
+                <div class="coding-project-preview">
+                  <div class="coding-project-image">
+                    <div class="placeholder-image">
+                      <img
+                        src="images/airbnb_redesign.jpg"
+                        alt="samsunglife Clone Coding"
+                      />
+                    </div>
+                  </div>
+                  <div class="coding-project-info">
+                    <h3 class="coding-project-title">
+                      samsunglife Clone Coding
+                    </h3>
+                    <p class="coding-project-description">
+                      에어비앤비의 감성을 유지하면서 사용자 경험(UX)과 정보
+                      구조(UI)을 개선한 리디자인 프로젝트
+                    </p>
+                    <div class="coding-project-tags">
+                      <span class="tag">HTML</span>
+                      <span class="tag">CSS</span>
+                      <span class="tag">JavaScript</span>
+                    </div>
+                    <button
+                      class="view-coding-project-btn"
+                      onclick="openCodingProject('project3')"
+                    >
+                      GitHub에서 보기
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 하단 도트 네비게이션 -->
+            <div class="coding-portfolio-dots">
+              <span class="dot active" onclick="goToCodingProject(1)"></span>
+              <span class="dot" onclick="goToCodingProject(2)"></span>
+              <span class="dot" onclick="goToCodingProject(3)"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- design Section -->
+    <section id="design" class="design-section">
+      <div class="design-container">
+        <div class="browser-window">
+          <div class="browser-bar">
+            <div class="traffic-lights">
+              <div class="traffic-light red"></div>
+              <div class="traffic-light yellow"></div>
+              <div class="traffic-light green"></div>
+            </div>
+            <div class="browser-url-bar">
+              <div class="nav-buttons">
+                <button
+                  class="nav-btn prev-btn"
+                  onclick="changedesignProject(-1)"
+                >
+                  ←
+                </button>
+                <button
+                  class="nav-btn next-btn"
+                  onclick="changedesignProject(1)"
+                >
+                  →
+                </button>
+              </div>
+              <div class="url-input">
+                <span id="project-url">DESIGN PAGE</span>
+              </div>
+              <button class="share-btn">⤴</button>
+            </div>
+          </div>
+
+          <!-- 디자인 포트폴리오 컨텐츠 -->
+          <div class="portfolio-content">
+            <div class="portfolio-header">
+              <div class="portfolio-counter">
+                <span id="current-project">1</span> /
+                <span id="total-projects">9</span>
+              </div>
+            </div>
+
+            <div class="portfolio-gallery">
+              <!-- 디자인 프로젝트 1 -->
+              <div class="project-item active" data-project="1">
+                <div class="project-preview">
+                  <div class="project-image">
+                    <div
+                      class="placeholder-image"
+                      style="
+                        background: linear-gradient(
+                          135deg,
+                          #667eea 0%,
+                          #764ba2 100%
+                        );
+                      "
+                    >
+                      <span>모바일 앱 디자인 프로젝트</span>
+                    </div>
+                  </div>
+                  <div class="project-info">
+                    <h3 class="project-title">Mobile App Design</h3>
+                    <p class="project-description">
+                      반응형 웹사이트를 위한 모던하고 깔끔한 UI/UX 디자인
+                    </p>
+                    <div class="project-tags">
+                      <span class="tag">Mobile App</span>
+                      <span class="tag">INTUITIVE UI</span>
+                      <span class="tag">USER FLOW OPTIMIZATION</span>
+                    </div>
+                    <button
+                      class="view-project-btn"
+                      onclick="openFigma('project1')"
+                    >
+                      Figma에서 보기
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 디자인프로젝트 2 -->
+              <div class="project-item" data-project="2">
+                <div class="project-preview">
+                  <div class="project-image">
+                    <div class="placeholder-image">
+                      <img
+                        src="images/app-design-banner.jpg"
+                        alt="app-design-banner"
+                      />
+                    </div>
+                  </div>
+                  <div class="project-info">
+                    <h3 class="project-title">Mobile App Design - 협업</h3>
+                    <p class="project-description">
+                      사용자 친화적인 모바일 앱 인터페이스 디자인
+                    </p>
+                    <div class="project-tags">
+                      <span class="tag">Mobile App</span>
+                      <span class="tag">UI Design</span>
+                      <span class="tag">Prototype</span>
+                    </div>
+                    <!-- 버튼 클릭 시 모달 열림 -->
+                    <a
+                      class="view-project-btn"
+                      data-action="figma"
+                      data-project="project2"
+                      href="https://www.figma.com/proto/OGH2s8j1Rt2pdNOfSVF1FO/4%EC%A1%B0-%EB%B0%A5%ED%94%8C%EB%A6%AD%EC%8A%A4-%EC%95%B1%EB%94%94%EC%9E%90%EC%9D%B8?page-id=163%3A1441&node-id=458-1320&p=f&viewport=-240%2C375%2C0.12&t=vq76r8RJNiyOSDld-1&scaling=min-zoom&content-scaling=fixed"
+                      target="_blank"
+                    >
+                      Figma에서 보기
+                    </a>
+                    <a
+                      class="view-project-btn"
+                      data-action="process"
+                      data-project="project2"
+                      href="https://www.figma.com/proto/OGH2s8j1Rt2pdNOfSVF1FO/4%EC%A1%B0-%EB%B0%A5%ED%94%8C%EB%A6%AD%EC%8A%A4-%EC%95%B1%EB%94%94%EC%9E%90%EC%9D%B8?page-id=503%3A800&node-id=503-802&viewport=671%2C68%2C0.06&t=W6vmaC8nGUbZNw9t-1&scaling=min-zoom&content-scaling=fixeded"
+                      target="_blank"
+                    >
+                      제작프로세스 보기
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 디자인 프로젝트 3 -->
+              <div class="project-item" data-project="3">
+                <div class="project-preview">
+                  <div class="project-image">
+                    <div
+                      class="placeholder-image"
+                      style="
+                        background: linear-gradient(
+                          135deg,
+                          #4ecdc4 0%,
+                          #44a08d 100%
+                        );
+                      "
+                    >
+                      <span>에디토리얼 디자인</span>
+                    </div>
+                  </div>
+                  <div class="project-info">
+                    <h3 class="project-title">Editorial Design</h3>
+                    <p class="project-description">
+                      편집디자인 (패키지) 브랜드 로고, 컬러 팔레트, 타이포그래피
+                      시스템
+                    </p>
+                    <div class="project-tags">
+                      <span class="tag">Branding</span>
+                      <span class="tag">Logo Design</span>
+                      <span class="tag">Identity</span>
+                    </div>
+                    <button
+                      class="view-project-btn"
+                      onclick="openFigma('project3')"
+                    >
+                      Figma에서 보기
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 디자인 프로젝트 4 -->
+              <div class="project-item" data-project="4">
+                <div class="project-preview">
+                  <div class="project-image">
+                    <div class="placeholder-image">
+                      <img
+                        src="images/re-design-lukt.jpg"
+                        alt="re-design-lukt"
+                      />
+                    </div>
+                  </div>
+                  <div class="project-info">
+                    <h3 class="project-title">lukt page design</h3>
+                    <p class="project-description">
+                      데이터 시각화를 위한 직관적인 상세페이지 디자인
+                    </p>
+                    <div class="project-tags">
+                      <span class="tag">RE-DESIGN</span>
+                      <span class="tag">USER-CENTERED</span>
+                      <span class="tag">VISUAL HIERARCHY</span>
+                    </div>
+                    <!--  버튼 클릭 시 모달 열림 -->
+                    <a
+                      href="images/re-design-lukt-detail.pdf"
+                      target="_blank"
+                      class="view-project-btn"
+                      data-image="images/re-design-lukt-detail.pdf"
+                    >
+                      상세페이지 보기
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 디자인 프로젝트 5 -->
+              <div class="project-item" data-project="5">
+                <div class="project-preview">
+                  <div class="project-image">
+                    <div class="placeholder-image">
+                      <img
+                        src="images/re-design-cocodor.jpg"
+                        alt="re-design-cocodor"
+                      />
+                    </div>
+                  </div>
+                  <div class="project-info">
+                    <h3 class="project-title">cocodor page design</h3>
+                    <p class="project-description">
+                      데이터 시각화를 위한 직관적인 상세페이지 디자인
+                    </p>
+                    <div class="project-tags">
+                      <span class="tag">RE-DESIGN</span>
+                      <span class="tag">USER-CENTERED</span>
+                      <span class="tag">VISUAL HIERARCHY</span>
+                    </div>
+                    <!--  버튼 클릭 시 모달 열림 -->
+                    <a
+                      href="images/re-design-lukt-detail.jpg"
+                      target="_blank"
+                      class="view-project-btn"
+                      data-image="images/re-design-lukt-detail.jpg"
+                    >
+                      상세페이지 보기
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 디자인 프로젝트 6 -->
+              <div class="project-item" data-project="6">
+                <div class="project-preview">
+                  <div class="project-image">
+                    <div class="placeholder-image">
+                      <img
+                        src="images/wep-design-banner.jpg"
+                        alt="wep-design-banner"
+                      />
+                    </div>
+                  </div>
+                  <div class="project-info">
+                    <h3 class="project-title">page design - 협업</h3>
+                    <p class="project-description">
+                      데이터 시각화를 위한 직관적인 상세페이지 디자인
+                    </p>
+                    <div class="project-tags">
+                      <span class="tag">RE-DESIGN</span>
+                      <span class="tag"></span>
+                      <span class="tag"></span>
+                    </div>
+                    <a
+                      class="view-project-btn"
+                      data-action="figma"
+                      data-project="project6"
+                      href="https://www.figma.com/proto/U0ceDSN70s1XiFWomTLrTE/6.12~6.18-%ED%98%91%EC%97%85-%EC%9B%B9-%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8?page-id=376%3A12&node-id=376-15&p=f&viewport=-18%2C15%2C0.06&t=3lLHfKtwYp621RYs-1&scaling=min-zoom&content-scaling=fixed"
+                      target="_blank"
+                    >
+                      Figma에서 보기
+                    </a>
+                    <a
+                      class="view-project-btn"
+                      data-action="process"
+                      data-project="project2"
+                      href="https://www.figma.com/proto/U0ceDSN70s1XiFWomTLrTE/6.12~6.18-%ED%98%91%EC%97%85-%EC%9B%B9-%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8?page-id=376%3A12&node-id=376-15&p=f&viewport=-249%2C267%2C0.05&t=PIhV8JUcd45OH1cQ-1&scaling=min-zoom&content-scaling=fixed"
+                      target="_blank"
+                    >
+                      Figma에서 보기
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 디자인 프로젝트 7 -->
+              <div class="project-item" data-project="5">
+                <div class="project-preview">
+                  <div class="project-image">
+                    <div class="placeholder-image">
+                      <img src="images/landing_page.jpg" alt="landing_page" />
+                    </div>
+                  </div>
+                  <div class="project-info">
+                    <h3 class="project-title">landing page</h3>
+                    <p class="project-description">
+                      사용자 경험을 높이는 직관적이고 감각적인 랜딩페이지 디자인
+                    </p>
+                    <div class="project-tags">
+                      <span class="tag">Intuitive UX</span>
+                      <span class="tag">Visual Impact</span>
+                      <span class="tag">Conversion Focused</span>
+                    </div>
+                    <!--  버튼 클릭 시 모달 열림 -->
+                    <a
+                      class="view-project-btn"
+                      data-action="figma"
+                      data-project="project7"
+                      href="https://www.figma.com/proto/OGH2s8j1Rt2pdNOfSVF1FO/4%EC%A1%B0-%EB%B0%A5%ED%94%8C%EB%A6%AD%EC%8A%A4-%EC%95%B1%EB%94%94%EC%9E%90%EC%9D%B8?page-id=163%3A1441&node-id=458-1320&p=f&viewport=-240%2C375%2C0.12&t=vq76r8RJNiyOSDld-1&scaling=min-zoom&content-scaling=fixed"
+                      target="_blank"
+                    >
+                      Figma에서 보기
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 디자인 프로젝트 8 -->
+              <div class="project-item" data-project="8">
+                <div class="project-preview">
+                  <div class="project-image">
+                    <div
+                      class="placeholder-image"
+                      style="
+                        background: linear-gradient(
+                          135deg,
+                          #a8edea 0%,
+                          #fed6e3 100%
+                        );
+                      "
+                    >
+                      <span>포트폴리오 디자인</span>
+                    </div>
+                  </div>
+                  <div class="project-info">
+                    <h3 class="project-title">Branding Design</h3>
+                    <p class="project-description">
+                      브랜드 고유의 아이덴티티를 시각 언어로 구현해내는 전략적
+                      디자인
+                    </p>
+                    <div class="project-tags">
+                      <span class="tag">BRAND CONSISTENCY</span>
+                      <span class="tag">VISUAL IMPACT</span>
+                      <span class="tag">INFORMATION DESIGN</span>
+                    </div>
+                    <button
+                      class="view-project-btn"
+                      onclick="openFigma('project5')"
+                    >
+                      Figma에서 보기
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 디자인 프로젝트 9 -->
+              <div class="project-item" data-project="9">
+                <div class="project-preview">
+                  <!-- Effect Cards 슬라이드 구조 -->
+                  <div class="swiper cardnews-swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="/images/cardnews1.jpg" alt="Card News 1" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="/images/cardnews2.jpg" alt="Card News 2" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="/images/cardnews3.jpg" alt="Card News 3" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="/images/cardnews4.jpg" alt="Card News 4" />
+                      </div>
+                    </div>
+                    <!-- 네비게이션 버튼 (필요시) -->
+                    <!-- <div class="swiper-button-prev"></div>
+                      <div class="swiper-button-next"></div> -->
+                  </div>
+
+                  <div class="project-info">
+                    <h3 class="project-title">Card News Design</h3>
+                    <p class="project-description">
+                      핵심 정보를 시각적으로 전달하는 효과적인 스토리텔링 디자인
+                    </p>
+                    <div class="project-tags">
+                      <span class="tag">Visual Communication</span>
+                      <span class="tag">Storytelling</span>
+                      <span class="tag">Content Marketing</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 하단 도트 네비게이션 -->
+            <div class="portfolio-dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact Section -->
+    <section id="contact" class="intro-section">
+      <div class="intro-content">
+        <img src="images/imac.png" alt="imac" class="imac-image" />
+        <div class="intro-text">
+          <h1 class="HVERME-title">
+            <span class="H-deco">H</span>
+            <span class="pixel-rest">OVER ME!</span>
+          </h1>
+        </div>
+        <div class="portfolio-search-bar">
+          <span>소개를 마칩니다. 감사합니다</span>
+        </div>
+        <button id="messageBtn" class="message-button">
+          <img
+            src="images/icon/free-icon.png"
+            alt="message"
+            class="message-icon"
+          />
+        </button>
+      </div>
+
+      <!-- 아이맥 프레임 내부 요소들 -->
+      <div class="imac-frame-content">
+        <!-- 반짝이는 별 아이콘 -->
+        <div class="sparkle-icon">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z"
+              fill="currentColor"
+            />
+          </svg>
+        </div>
+
+        <!-- 상단 우측 3개 버튼 -->
+        <div class="top-buttons">
+          <button
+            class="window-btn minimize-btn"
+            onclick="toggleMinimize(this)"
+          >
+            -
+          </button>
+          <button
+            class="window-btn maximize-btn"
+            onclick="toggleMaximize(this)"
+          >
+            □
+          </button>
+          <button class="window-btn close-btn" onclick="toggleClose(this)">
+            ×
+          </button>
+        </div>
+
+        <!-- 휴지통 아이콘 -->
+        <div class="imac-trash-icon">
+          <svg
+            width="30"
+            height="30"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3 6H21"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M8 6V4C8 3.44772 8.44772 3 9 3H15C15.5523 3 16 3.44772 16 4V6"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M19 6V20C19 20.5523 18.5523 21 18 21H6C5.44772 21 5 20.5523 5 20V6"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M10 11V16"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M14 11V16"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+      </div>
+    </section>
+    <!-- 상세페이지 이미지 모달 -->
+    <!-- <div
+      id="image-modal"
+      style="
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 9999;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        padding: 50px 0;
+        overflow-y: auto;
+      "
+    >
+      <img
+        id="modal-image"
+        src=""
+        alt="상세페이지 이미지"
+        style="max-width: 1000px; width: 100%; height: auto"
+      />
+      <span
+        id="close-modal"
+        style="
+          position: fixed;
+          top: 20px;
+          right: 40px;
+          color: white;
+          font-size: 36px;
+          cursor: pointer;
+          user-select: none;
+        "
+        >&times;</span
+      >
+    </div> -->
+  </body>
+</html>

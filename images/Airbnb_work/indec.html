@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>에어비앤비 서비스 둘러보기</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Swiper JS -->
+    <script src="js/style.js" defer></script>
+  </head>
+  <body>
+    <!--  Header -->
+    <header>
+      <div class="nav-container">
+        <div class="nav-left">
+          <img src="/images/airbnb_logo.jpg" alt="airbnb logo" />
+          <ul class="nav-links">
+            <li>홈</li>
+            <li>숙소</li>
+            <li>체험 <span>NEW</span></li>
+            <li>서비스 <span>NEW</span></li>
+            <li>호스팅 하기</li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <span>🔍</span>
+          <span>☰</span>
+        </div>
+      </div>
+    </header>
+
+    <!--  Hero Section with Banner -->
+    <section class="hero">
+      <img src="/images/banner.jpg" alt="배너 이미지" class="banner" />
+      <div class="hero-content">
+        <h1>에어비앤비 서비스 둘러보기</h1>
+        <p>여행지에서만 만날 수 있는, 진짜 경험</p>
+        <div class="search-box">
+          <!-- 돋보기 아이콘 -->
+          <div class="nav-right">🔍 ☰</div>
+          <input type="text" placeholder="어디로 여행을 떠날까요?" />
+        </div>
+      </div>
+    </section>
+
+    <!-- 두 번째 단락 : 기억에 남는 순간 섹션 -->
+    <section class="moment-section">
+      <h2>“이번 여행에서 가장 기억에 남는 순간”</h2>
+      <p>이런 여행은 어때요?</p>
+
+      <div class="slider-container">
+        <button class="arrow left" onclick="scrollSlider(-1)">&#10094;</button>
+        <div class="slider" id="slider">
+          <div class="slide">
+            <img src="/images/france.jpg" alt="프랑스" />
+            <span>프랑스</span>
+          </div>
+          <div class="slide">
+            <img src="/images/poland.jpg" alt="폴란드" />
+            <span>폴란드</span>
+          </div>
+          <div class="slide">
+            <img src="/images/vietnam.jpg" alt="베트남" />
+            <span>베트남</span>
+          </div>
+          <div class="slide">
+            <img src="/images/japan.jpg" alt="일본" />
+            <span>일본</span>
+          </div>
+        </div>
+        <button class="arrow right" onclick="scrollSlider(1)">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- 숙소 카드 섹션 -->
+    <div class="accommodation-section">
+      <div class="cards-grid">
+        <!-- 카드 1 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="/images/image1.jpg" alt="숙소1" />
+            <div class="guest-favorite">게스트 선호</div>
+            <div class="heart-icon">♡</div>
+          </div>
+          <div class="card-content">
+            <div class="location">6월13일~14일</div>
+            <div class="price-rating">
+              <div class="price">
+                114.118 <span class="price-per-night"> · 1박 </span>
+              </div>
+              <div class="rating">
+                <span class="star">★</span>
+                <span class="rating-text">4.84</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 카드 2 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="/images/image2.jpg" alt="숙소2" />
+            <div class="guest-favorite">게스트 선호</div>
+            <div class="heart-icon">♡</div>
+          </div>
+          <div class="card-content">
+            <div class="location">6월13일~14일</div>
+            <div class="price-rating">
+              <div class="price">
+                117.574 <span class="price-per-night"> · 1박 </span>
+              </div>
+              <div class="rating">
+                <span class="star">★</span>
+                <span class="rating-text">5.0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 카드 3 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="/images/image3.jpg" alt="숙소3" />
+            <div class="guest-favorite">게스트 선호</div>
+            <div class="heart-icon">♡</div>
+          </div>
+          <div class="card-content">
+            <div class="location">6월13일~14일</div>
+            <div class="price-rating">
+              <div class="price">
+                131.255 <span class="price-per-night"> · 1박 </span>
+              </div>
+              <div class="rating">
+                <span class="star">★</span>
+                <span class="rating-text">4.91</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 카드 4 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="/images/image4.jpg" alt="숙소4" />
+            <div class="guest-favorite">게스트 선호</div>
+            <div class="heart-icon">♡</div>
+          </div>
+          <div class="card-content">
+            <div class="location">6월13일~14일</div>
+            <div class="price-rating">
+              <div class="price">
+                82.165 <span class="price-per-night"> · 1박 </span>
+              </div>
+              <div class="rating">
+                <span class="star">★</span>
+                <span class="rating-text">4.84</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="continue-search-container">
+        <button class="continue-search-btn">
+          <span class="btn-text">
+            숙소 검색 계속하기
+            <small>6월14일 ~ 15일 게스트 2명</small>
+          </span>
+          <div class="btn-image-wrapper">
+            <img src="images/next.png" alt="다음 아이콘" />
+          </div>
+        </button>
+      </div>
+      <section class="popular-packages">
+        <div class="section-header">
+          <img
+            src="/images/logo.jpg"
+            alt="게스트선호 로고"
+            class="section-logo"
+          />
+          <h2>게스트에게 가장 사랑받는 패키지</h2>
+          <div class="rating">
+            <span>4.84 ~ 5.0</span>
+            <span class="stars">★★★★★</span>
+          </div>
+        </div>
+
+        <div class="package-list">
+          <div class="package-item">
+            <img src="/images/image_10.jpg" alt="해외 자유여행 초특가" />
+            <div class="package-overlay">
+              <p>해외 자유여행 초특가</p>
+              <button class="detail-btn">자세히보기 ></button>
+            </div>
+          </div>
+          <div class="package-item">
+            <img src="/images/danang.jpg" alt="다낭 자유여행 패키지" />
+            <div class="package-caption">
+              [베트남/다낭] 신라모노그램 숙박<br />
+              <strong>399,000원~</strong>
+            </div>
+          </div>
+          <div class="package-item">
+            <img src="/images/Phu_Quoc.jpg" alt="푸꾸옥 자유여행 패키지" />
+            <div class="package-caption">
+              [베트남/푸꾸옥] ★특전포함★<br />
+              <strong>419,000원~</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="airbnb-experience">
+        <div class="experience-header">
+          <h2>에어비앤비 체험 둘러보기</h2>
+          <p>
+            여행지에서 만나는 특별한 하루. 현지인이 직접 안내하는 체험을
+            경험해보세요.
+          </p>
+          <button class="view-all-btn">전체보기</button>
+        </div>
+
+        <!-- 에어비앤비 오리지널 체험 섹션 -->
+        <div class="experience-section">
+          <h3>에어비앤비 오리지널 체험</h3>
+          <div class="slider-wrapper">
+            <button
+              class="arrow arrow-prev"
+              onclick="scrollSlider('slider-original', -1)"
+            >
+              &#10094;
+            </button>
+            <div class="slider-container" id="slider-original">
+              <div class="experience-card">
+                <img src="/images/experience1.jpg" alt="유니폼 디자인" />
+                <div class="experience-info">
+                  <p>투르 드 프랑스에서 영감을 얻은 나만의 유니폼 디자인하기</p>
+                  <span>1인당 ₩169,810원부터</span>
+                </div>
+              </div>
+              <div class="experience-card">
+                <img src="/images/experience2.jpg" alt="무대감상" />
+                <div class="experience-info">
+                  <p>빈센트 라브뉘와 함께 투어 무대 감상하기</p>
+                  <span>1인당 ₩169,810원부터</span>
+                </div>
+              </div>
+              <div class="experience-card">
+                <img src="/images/experience3.jpg" alt="셀럽 체험" />
+                <div class="experience-info">
+                  <p>제이미 미즈라히와 함께 셀럽처럼 스타일링하기</p>
+                  <span>1인당 ₩824,740부터</span>
+                </div>
+              </div>
+              <div class="experience-card">
+                <img src="/images/experience4.jpg" alt="지아니의 나폴리" />
+                <div class="experience-info">
+                  <p>지아니의 나폴리에서의 추억 나폴리, 이탈리아</p>
+                  <span>1인당 ₩61,749부터 최저 ₩108,061</span>
+                </div>
+              </div>
+            </div>
+            <button
+              class="arrow arrow-next"
+              onclick="scrollSlider('slider-original', 1)"
+            >
+              &#10095;
+            </button>
+          </div>
+        </div>
+
+        <!-- 인기 체험 섹션 -->
+        <div class="experience-section">
+          <h3>현재 계신 곳의 여행자에게 인기 있는 체험</h3>
+          <div class="slider-wrapper">
+            <button
+              class="arrow arrow-prev"
+              onclick="scrollSlider('slider-popular', -1)"
+            >
+              &#10094;
+            </button>
+            <div class="slider-container" id="slider-popular">
+              <div class="experience-card">
+                <img src="/images/experience5.jpg" alt="이자카야" />
+                <div class="experience-info">
+                  <p>오사카의 현지 바와 이자카야 투어</p>
+                  <span>1인당 ₩56,595부터 · 평점 4.86점(5점 만점)</span>
+                </div>
+              </div>
+              <div class="experience-card">
+                <img src="/images/experience6.jpg" alt="우동 클래스" />
+                <div class="experience-info">
+                  <p>오사카에서 즐기는 우동 만들기 클래스</p>
+                  <span>1인당 ₩70,744부터 · 평점 4.93점(5점 만점)</span>
+                </div>
+              </div>
+              <div class="experience-card">
+                <img src="/images/experience7.jpg" alt="우쿨렐레" />
+                <div class="experience-info">
+                  <p>기타 장인과 함께 나만의 우쿨렐레 장식하기</p>
+                  <span>1인당 ₩150,921부터</span>
+                </div>
+              </div>
+              <div class="experience-card">
+                <img src="/images/experience8.jpg" alt="야경 투어" />
+                <div class="experience-info">
+                  <p>오사카의 숨은 명소 탐방</p>
+                  <span>1인당 ₩75,460부터 · 평점 4.97점(5점 만점)</span>
+                </div>
+              </div>
+            </div>
+            <button
+              class="arrow arrow-next"
+              onclick="scrollSlider('slider-popular', 1)"
+            >
+              &#10095;
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 서비스 섹션 -->
+      <section class="airbnb-service">
+        <div class="service-header">
+          <h2>에어비앤비 서비스 둘러보기</h2>
+          <p>여행 중에도 누리는 나만의 힐링과 스타일, 지금 만나보세요.</p>
+          <button class="view-all-btn">전체보기</button>
+        </div>
+
+        <div class="massage-slider-wrapper" id="massage-slider">
+          <div class="center-title">마사지</div>
+          <div class="slide-counter">
+            <span id="massage-current">1</span> /
+            <span id="massage-total">5</span>
+          </div>
+          <button
+            class="slider-controls prev"
+            onclick="previousSlide('massage')"
+          >
+            ‹
+          </button>
+          <button class="slider-controls next" onclick="nextSlide('massage')">
+            ›
+          </button>
+          <div class="slider-track" id="massage-track">
+            <div class="service-card">
+              <img src="/images/service-1.jpg" alt="마사지1" />
+            </div>
+            <div class="service-card">
+              <img src="/images/service-2.jpg" alt="마사지2" />
+            </div>
+            <div class="service-card">
+              <img src="/images/service-3.jpg" alt="마사지3" />
+            </div>
+            <div class="service-card">
+              <img src="/images/service-4.jpg" alt="마사지4" />
+            </div>
+            <div class="service-card">
+              <img src="/images/service-5.jpg" alt="마사지5" />
+            </div>
+          </div>
+          <div class="progress-container">
+            <div class="progress-bar">
+              <div class="progress-fill" id="massage-progress"></div>
+            </div>
+            <div class="progress-dots" id="massage-dots"></div>
+          </div>
+          <button class="toggle-btn" id="massage-toggle">
+            <img src="/images/pause-btn.png" alt="정지" />
+          </button>
+        </div>
+
+        <div class="photo-slider-wrapper" id="photo-slider">
+          <div class="center-title">사진 촬영</div>
+          <div class="slide-counter">
+            <span id="photo-current">1</span> /
+            <span id="photo-total">5</span>
+          </div>
+          <button class="slider-controls prev" onclick="previousSlide('photo')">
+            ‹
+          </button>
+          <button class="slider-controls next" onclick="nextSlide('photo')">
+            ›
+          </button>
+          <div class="slider-track" id="photo-track">
+            <div class="service-card">
+              <img src="/images/service-6.jpg" alt="사진1" />
+            </div>
+            <div class="service-card">
+              <img src="/images/service-7.jpg" alt="사진2" />
+            </div>
+            <div class="service-card">
+              <img src="/images/service-8.jpg" alt="사진3" />
+            </div>
+            <div class="service-card">
+              <img src="/images/service-9.jpg" alt="사진4" />
+            </div>
+            <div class="service-card">
+              <img src="/images/service-10.jpg" alt="사진5" />
+            </div>
+          </div>
+          <div class="progress-container">
+            <div class="progress-bar">
+              <div class="progress-fill" id="photo-progress"></div>
+            </div>
+            <div class="progress-dots" id="photo-dots"></div>
+          </div>
+          <button class="toggle-btn" id="photo-toggle">
+            <img src="/images/pause-btn.png" alt="정지" />
+          </button>
+        </div>
+      </section>
+      <!-- 서비스 섹션 끝 -->
+      <!-- footer -->
+      <footer class="travel-footer">
+        <div class="footer-content">
+          <h2>다음 여행을 위한 추천 여행지</h2>
+          <div class="footer-grid">
+            <div>멋진 수영장</div>
+            <div>한적한 시골</div>
+            <div>기상천외한 숙소</div>
+            <div>북극</div>
+            <div>디자인</div>
+            <div>초소형 주택</div>
+            <div>캠핑장</div>
+            <div>복토 주택</div>
+            <div>타워</div>
+            <div>캠핑카</div>
+            <div>농장</div>
+            <div>풍차</div>
+            <div>캐슬</div>
+            <div>국립공원</div>
+            <div>Luxe</div>
+            <div>컨테이너하우스</div>
+            <div>와인 농장</div>
+          </div>
+
+          <div class="footer-links">
+            <a href="#">개인정보 처리방침</a> · <a href="#">쿠키 정책</a> ·
+            <a href="#">이용약관</a> · <a href="#">사이트맵</a> ·
+            <a href="#">환불 정책</a> ·
+            <a href="#">회사 세부정보</a>
+          </div>
+
+          <p class="footer-info">
+            2025 Airbnb, Inc. | 웹사이트 제공자: Airbnb Ireland UC, private
+            unlimited company, 8 Hanover Quay Dublin 2, D02 DP23 Ireland | VAT:
+            IE9827384L | 사업자 등록번호: IE 511825 | 연락처: terms@airbnb.com,
+            080-822-0230 | 에어비앤비는 통신판매중개자로서 플랫폼을 통해
+            게스트와 호스트 사이의 거래가 이루어지며, 당사가 직접 판매하지
+            않습니다.
+          </p>
+
+          <div class="footer-socials">
+            <a href="#"><img src="/images/facebook.png" alt="Facebook" /></a>
+            <a href="#"><img src="/images/x.png" alt="X" /></a>
+            <a href="#"><img src="/images/instagram.png" alt="Instagram" /></a>
+            <a href="#"><img src="/images/cafe.png" alt="cafe" /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
