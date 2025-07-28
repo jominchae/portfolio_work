@@ -1006,6 +1006,11 @@ img {
 .coding-project-info {
   flex: 1;
   padding-left: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 .coding-project-title {
@@ -1037,6 +1042,16 @@ img {
   border-radius: 20px;
   font-size: 12px;
   font-weight: 500;
+}
+
+.coding-project-info .view-project-btn {
+  /* 버튼이 inline-block 또는 block이면 아래 설정 필요 */
+  display: inline-block;
+  margin-right: 12px; /* 버튼 사이 간격 */
+}
+
+.coding-project-info .view-project-btn:last-child {
+  margin-right: 0;
 }
 
 .view-coding-project-btn {
@@ -1083,6 +1098,13 @@ img {
 .coding-portfolio-dots .dot:hover {
   background-color: #007bff;
   transform: scale(1.1);
+}
+
+.button-group {
+  display: flex;
+  gap: 16px; /* 버튼 사이 간격 (원하는 값으로 조절 가능) */
+  justify-content: center; /* 가운데 정렬 */
+  flex-wrap: wrap; /* 줄바꿈 대응 (모바일 대비) */
 }
 
 @keyframes fadeIn {
@@ -1442,6 +1464,7 @@ img {
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
+  justify-content: center;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(230, 104, 240, 0.3);
 }
@@ -1459,6 +1482,12 @@ img {
   margin-top: 30px;
 }
 
+/* .portfolio-dots .dot {
+  z-index: 9999;
+  pointer-events: auto;
+  background: red !important;
+} */
+
 .dot {
   width: 12px;
   height: 12px;
@@ -1466,6 +1495,7 @@ img {
   background: #ddd;
   cursor: pointer;
   transition: all 0.3s ease;
+  pointer-events: auto;
 }
 
 .dot.active {
@@ -1698,7 +1728,7 @@ img {
   transition: 0.3s ease;
   display: flex;
   align-items: center;
-  gap: 4px;
+  justify-content: center;
   pointer-events: auto;
   z-index: 10;
 }
@@ -1708,11 +1738,162 @@ img {
   transform: scale(1.05);
 }
 
-.message-button img {
-  width: 50px;
-  height: 50px;
+button.message-button img {
+  width: 50px !important;
+  height: 50px !important;
   object-fit: contain;
   transition: transform 0.3s ease;
+}
+
+/* 메세지 보내기 기능 */
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  background: white;
+  border-radius: 24px;
+  padding: 50px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  transform: scale(0.7) translateY(50px);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  box-shadow: 0 50px 100px rgba(0, 0, 0, 0.3);
+}
+
+.modal-overlay.active .modal {
+  transform: scale(1) translateY(0);
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #666;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.modal-close:hover {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.modal-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.modal-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.contact-form {
+  display: grid;
+  gap: 25px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.form-input,
+.form-textarea {
+  padding: 15px 20px;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: #fafafa;
+  font-family: inherit;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-button {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  padding: 18px 40px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+}
+
+@media (max-width: 768px) {
+  .modal {
+    padding: 30px 20px;
+    margin: 20px;
+  }
+
+  .modal-title {
+    font-size: 2rem;
+  }
 }
 
 /* contact 섹션 아이맥 프레임 내부 요소들 */
@@ -1740,8 +1921,8 @@ img {
 /* contact 섹션 반짝이는 별  */
 #contact .sparkle-icon {
   position: absolute;
-  top: 250px;
-  left: 64%;
+  top: 350px;
+  left: 62%;
   transform: translateX(-50%);
   color: #ffd700;
   animation: sparkle 2s ease-in-out infinite;

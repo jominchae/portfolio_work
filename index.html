@@ -60,9 +60,24 @@
     <div class="imac-frame-content">
       <!-- 상단 우측 3개 버튼 -->
       <div class="top-buttons">
-        <button class="window-btn minimize-btn">-</button>
-        <button class="window-btn maximize-btn">□</button>
-        <button class="window-btn close-btn">×</button>
+        <button
+          class="window-btn minimize-btn"
+          onclick="changeColor(this, '#ffbd2e')"
+        >
+          -
+        </button>
+        <button
+          class="window-btn maximize-btn"
+          onclick="changeColor(this, '#28ca42')"
+        >
+          □
+        </button>
+        <button
+          class="window-btn close-btn"
+          onclick="changeColor(this, '#ff5f56')"
+        >
+          ×
+        </button>
       </div>
 
       <!-- 아이맥 프레임 내부 쓰레기통 -->
@@ -247,13 +262,13 @@
               <div class="nav-buttons">
                 <button
                   class="nav-btn prev-btn"
-                  onclick="changeCodingProject(-1)"
+                  onclick="setTimeout(() => changeCodingProject(-1), 0)"
                 >
                   ←
                 </button>
                 <button
                   class="nav-btn next-btn"
-                  onclick="changeCodingProject(1)"
+                  onclick="setTimeout(() => changeCodingProject(1), 0)"
                 >
                   →
                 </button>
@@ -341,7 +356,7 @@
                   <div class="coding-project-image">
                     <div class="placeholder-image">
                       <img
-                        src="images/airbnb_redesign.jpg"
+                        src="images/samsunglife.jpeg"
                         alt="samsunglife Clone Coding"
                       />
                     </div>
@@ -351,20 +366,34 @@
                       samsunglife Clone Coding
                     </h3>
                     <p class="coding-project-description">
-                      에어비앤비의 감성을 유지하면서 사용자 경험(UX)과 정보
-                      구조(UI)을 개선한 리디자인 프로젝트
+                      실제 삼성생명 홈페이지를 클론하며 HTML, CSS, JavaScript를
+                      활용한 실전 중심의 웹 구현 프로젝트
                     </p>
                     <div class="coding-project-tags">
-                      <span class="tag">HTML</span>
-                      <span class="tag">CSS</span>
+                      <span class="tag">기여도 100%</span>
+                      <span class="tag">HTML/CSS</span>
                       <span class="tag">JavaScript</span>
                     </div>
-                    <button
-                      class="view-coding-project-btn"
-                      onclick="openCodingProject('project3')"
-                    >
-                      GitHub에서 보기
-                    </button>
+                    <div class="button-group">
+                      <a
+                        class="view-project-btn"
+                        data-action="figma"
+                        data-project="project2"
+                        href="https://www.samsungfire.com/"
+                        target="_blank"
+                      >
+                        기존
+                      </a>
+                      <a
+                        class="view-project-btn"
+                        data-action="process"
+                        data-project="project5"
+                        href="https://jominchae.github.io/samsungfire-clone/"
+                        target="_blank"
+                      >
+                        클론코딩
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -446,9 +475,9 @@
                       반응형 웹사이트를 위한 모던하고 깔끔한 UI/UX 디자인
                     </p>
                     <div class="project-tags">
-                      <span class="tag">Mobile App</span>
-                      <span class="tag">INTUITIVE UI</span>
-                      <span class="tag">USER FLOW OPTIMIZATION</span>
+                      <span class="tag">기여도 100%</span>
+                      <span class="tag">figma</span>
+                      <!-- <span class="tag">USER FLOW OPTIMIZATION</span> -->
                     </div>
                     <button
                       class="view-project-btn"
@@ -477,29 +506,31 @@
                       사용자 친화적인 모바일 앱 인터페이스 디자인
                     </p>
                     <div class="project-tags">
-                      <span class="tag">Mobile App</span>
-                      <span class="tag">UI Design</span>
-                      <span class="tag">Prototype</span>
+                      <span class="tag">기여도 25% </span>
+                      <span class="tag">figma | illustrator</span>
+                      <span class="tag"> html | css</span>
                     </div>
                     <!-- 버튼 클릭 시 모달 열림 -->
-                    <a
-                      class="view-project-btn"
-                      data-action="figma"
-                      data-project="project2"
-                      href="https://www.figma.com/proto/OGH2s8j1Rt2pdNOfSVF1FO/4%EC%A1%B0-%EB%B0%A5%ED%94%8C%EB%A6%AD%EC%8A%A4-%EC%95%B1%EB%94%94%EC%9E%90%EC%9D%B8?page-id=163%3A1441&node-id=458-1320&p=f&viewport=-240%2C375%2C0.12&t=vq76r8RJNiyOSDld-1&scaling=min-zoom&content-scaling=fixed"
-                      target="_blank"
-                    >
-                      Figma에서 보기
-                    </a>
-                    <a
-                      class="view-project-btn"
-                      data-action="process"
-                      data-project="project2"
-                      href="https://www.figma.com/proto/OGH2s8j1Rt2pdNOfSVF1FO/4%EC%A1%B0-%EB%B0%A5%ED%94%8C%EB%A6%AD%EC%8A%A4-%EC%95%B1%EB%94%94%EC%9E%90%EC%9D%B8?page-id=503%3A800&node-id=503-802&viewport=671%2C68%2C0.06&t=W6vmaC8nGUbZNw9t-1&scaling=min-zoom&content-scaling=fixeded"
-                      target="_blank"
-                    >
-                      제작프로세스 보기
-                    </a>
+                    <div class="button-group">
+                      <a
+                        class="view-project-btn"
+                        data-action="figma"
+                        data-project="project2"
+                        href="https://www.figma.com/proto/OGH2s8j1Rt2pdNOfSVF1FO/4%EC%A1%B0-%EB%B0%A5%ED%94%8C%EB%A6%AD%EC%8A%A4-%EC%95%B1%EB%94%94%EC%9E%90%EC%9D%B8?page-id=163%3A1441&node-id=458-1320&p=f&viewport=-240%2C375%2C0.12&t=vq76r8RJNiyOSDld-1&scaling=min-zoom&content-scaling=fixed"
+                        target="_blank"
+                      >
+                        Figma에서 보기
+                      </a>
+                      <a
+                        class="view-project-btn"
+                        data-action="process"
+                        data-project="project2"
+                        href="https://www.figma.com/proto/OGH2s8j1Rt2pdNOfSVF1FO/4%EC%A1%B0-%EB%B0%A5%ED%94%8C%EB%A6%AD%EC%8A%A4-%EC%95%B1%EB%94%94%EC%9E%90%EC%9D%B8?page-id=503%3A800&node-id=503-802&viewport=671%2C68%2C0.06&t=W6vmaC8nGUbZNw9t-1&scaling=min-zoom&content-scaling=fixeded"
+                        target="_blank"
+                      >
+                        제작프로세스 보기
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -518,7 +549,7 @@
                         );
                       "
                     >
-                      <span>에디토리얼 디자인</span>
+                      <span>브랜드 디자인</span>
                     </div>
                   </div>
                   <div class="project-info">
@@ -528,7 +559,7 @@
                       시스템
                     </p>
                     <div class="project-tags">
-                      <span class="tag">Branding</span>
+                      <span class="tag">기여도 100%</span>
                       <span class="tag">Logo Design</span>
                       <span class="tag">Identity</span>
                     </div>
@@ -559,9 +590,8 @@
                       데이터 시각화를 위한 직관적인 상세페이지 디자인
                     </p>
                     <div class="project-tags">
-                      <span class="tag">RE-DESIGN</span>
-                      <span class="tag">USER-CENTERED</span>
-                      <span class="tag">VISUAL HIERARCHY</span>
+                      <span class="tag">기여도 100%</span>
+                      <span class="tag">photoshop</span>
                     </div>
                     <!--  버튼 클릭 시 모달 열림 -->
                     <a
@@ -593,16 +623,17 @@
                       데이터 시각화를 위한 직관적인 상세페이지 디자인
                     </p>
                     <div class="project-tags">
-                      <span class="tag">RE-DESIGN</span>
-                      <span class="tag">USER-CENTERED</span>
-                      <span class="tag">VISUAL HIERARCHY</span>
+                      <span class="tag">기여도 100%</span>
+                      <span class="tag">photoshop</span>
+                      <span class="tag">카페24</span>
                     </div>
                     <!--  버튼 클릭 시 모달 열림 -->
                     <a
-                      href="images/re-design-lukt-detail.jpg"
-                      target="_blank"
                       class="view-project-btn"
-                      data-image="images/re-design-lukt-detail.jpg"
+                      data-action="process"
+                      data-project="project5"
+                      href="https://hjmjjy.cafe24.com/product/%EC%BD%94%EC%BD%94%EB%8F%84%EB%A5%B4-%EC%8B%9C%EA%B7%B8%EB%8B%88%EC%B2%98-%EB%94%94%ED%93%A8%EC%A0%80/27/category/1/display/2/"
+                      target="_blank"
                     >
                       상세페이지 보기
                     </a>
@@ -627,34 +658,35 @@
                       데이터 시각화를 위한 직관적인 상세페이지 디자인
                     </p>
                     <div class="project-tags">
-                      <span class="tag">RE-DESIGN</span>
-                      <span class="tag"></span>
-                      <span class="tag"></span>
+                      <span class="tag">기여도 25% </span>
+                      <span class="tag">figma | illustrator</span>
                     </div>
-                    <a
-                      class="view-project-btn"
-                      data-action="figma"
-                      data-project="project6"
-                      href="https://www.figma.com/proto/U0ceDSN70s1XiFWomTLrTE/6.12~6.18-%ED%98%91%EC%97%85-%EC%9B%B9-%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8?page-id=376%3A12&node-id=376-15&p=f&viewport=-18%2C15%2C0.06&t=3lLHfKtwYp621RYs-1&scaling=min-zoom&content-scaling=fixed"
-                      target="_blank"
-                    >
-                      Figma에서 보기
-                    </a>
-                    <a
-                      class="view-project-btn"
-                      data-action="process"
-                      data-project="project2"
-                      href="https://www.figma.com/proto/U0ceDSN70s1XiFWomTLrTE/6.12~6.18-%ED%98%91%EC%97%85-%EC%9B%B9-%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8?page-id=376%3A12&node-id=376-15&p=f&viewport=-249%2C267%2C0.05&t=PIhV8JUcd45OH1cQ-1&scaling=min-zoom&content-scaling=fixed"
-                      target="_blank"
-                    >
-                      Figma에서 보기
-                    </a>
+                    <div class="button-group">
+                      <a
+                        class="view-project-btn"
+                        data-action="figma"
+                        data-project="project6"
+                        href="http://m.hueree.com/index.php"
+                        target="_blank"
+                      >
+                        기존
+                      </a>
+                      <a
+                        class="view-project-btn"
+                        data-action="process"
+                        data-project="project6"
+                        href="https://www.figma.com/proto/U0ceDSN70s1XiFWomTLrTE/6.12~6.18-%ED%98%91%EC%97%85-%EC%9B%B9-%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8?node-id=376-15&p=f&t=csyUWeGvlUb7HX4K-1&scaling=min-zoom&content-scaling=fixed&page-id=376%3A12"
+                        target="_blank"
+                      >
+                        리디자인
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
 
               <!-- 디자인 프로젝트 7 -->
-              <div class="project-item" data-project="5">
+              <div class="project-item" data-project="7">
                 <div class="project-preview">
                   <div class="project-image">
                     <div class="placeholder-image">
@@ -667,9 +699,8 @@
                       사용자 경험을 높이는 직관적이고 감각적인 랜딩페이지 디자인
                     </p>
                     <div class="project-tags">
-                      <span class="tag">Intuitive UX</span>
-                      <span class="tag">Visual Impact</span>
-                      <span class="tag">Conversion Focused</span>
+                      <span class="tag">기여도 100%</span>
+                      <span class="tag">figma</span>
                     </div>
                     <!--  버튼 클릭 시 모달 열림 -->
                     <a
@@ -679,7 +710,7 @@
                       href="https://www.figma.com/proto/OGH2s8j1Rt2pdNOfSVF1FO/4%EC%A1%B0-%EB%B0%A5%ED%94%8C%EB%A6%AD%EC%8A%A4-%EC%95%B1%EB%94%94%EC%9E%90%EC%9D%B8?page-id=163%3A1441&node-id=458-1320&p=f&viewport=-240%2C375%2C0.12&t=vq76r8RJNiyOSDld-1&scaling=min-zoom&content-scaling=fixed"
                       target="_blank"
                     >
-                      Figma에서 보기
+                      랜딩페이지 보기
                     </a>
                   </div>
                 </div>
@@ -699,7 +730,7 @@
                         );
                       "
                     >
-                      <span>포트폴리오 디자인</span>
+                      <span>카페24 쇼핑몰</span>
                     </div>
                   </div>
                   <div class="project-info">
@@ -709,7 +740,7 @@
                       디자인
                     </p>
                     <div class="project-tags">
-                      <span class="tag">BRAND CONSISTENCY</span>
+                      <span class="tag">기여도 100%</span>
                       <span class="tag">VISUAL IMPACT</span>
                       <span class="tag">INFORMATION DESIGN</span>
                     </div>
@@ -726,7 +757,6 @@
               <!-- 디자인 프로젝트 9 -->
               <div class="project-item" data-project="9">
                 <div class="project-preview">
-                  <!-- Effect Cards 슬라이드 구조 -->
                   <div class="swiper cardnews-swiper">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
@@ -753,9 +783,8 @@
                       핵심 정보를 시각적으로 전달하는 효과적인 스토리텔링 디자인
                     </p>
                     <div class="project-tags">
-                      <span class="tag">Visual Communication</span>
-                      <span class="tag">Storytelling</span>
-                      <span class="tag">Content Marketing</span>
+                      <span class="tag">기여도 100%</span>
+                      <span class="tag">photoshop</span>
                     </div>
                   </div>
                 </div>
@@ -792,7 +821,11 @@
         <div class="portfolio-search-bar">
           <span>소개를 마칩니다. 감사합니다</span>
         </div>
-        <button id="messageBtn" class="message-button">
+        <button
+          id="messageBtn"
+          class="message-button"
+          onclick="openContactModal()"
+        >
           <img
             src="images/icon/free-icon.png"
             alt="message"
@@ -801,6 +834,62 @@
         </button>
       </div>
 
+      <div class="modal-overlay" id="contactModal">
+        <div class="modal">
+          <button class="modal-close" onclick="closeContactModal()">
+            &times;
+          </button>
+
+          <h3 class="modal-title">연락하기</h3>
+          <p class="modal-subtitle">
+            프로젝트 문의, 협업 제안, 또는 궁금한 점이 있으시면<br />
+            아래 양식을 작성해 주세요!
+          </p>
+
+          <form class="contact-form" onsubmit="handleContactSubmit(event)">
+            <div class="form-group">
+              <label class="form-label">이름 *</label>
+              <input
+                type="text"
+                class="form-input"
+                required
+                placeholder="성함을 입력해주세요"
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">이메일 *</label>
+              <input
+                type="email"
+                class="form-input"
+                required
+                placeholder="이메일 주소를 입력해주세요"
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">제목 *</label>
+              <input
+                type="text"
+                class="form-input"
+                required
+                placeholder="문의 제목을 입력해주세요"
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">메시지 *</label>
+              <textarea
+                class="form-textarea"
+                required
+                placeholder="자세한 내용을 입력해주세요..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-button">메시지 보내기</button>
+          </form>
+        </div>
+      </div>
       <!-- 아이맥 프레임 내부 요소들 -->
       <div class="imac-frame-content">
         <!-- 반짝이는 별 아이콘 -->
@@ -823,17 +912,20 @@
         <div class="top-buttons">
           <button
             class="window-btn minimize-btn"
-            onclick="toggleMinimize(this)"
+            onclick="changeColor(this, '#ffbd2e')"
           >
             -
           </button>
           <button
             class="window-btn maximize-btn"
-            onclick="toggleMaximize(this)"
+            onclick="changeColor(this, '#28ca42')"
           >
             □
           </button>
-          <button class="window-btn close-btn" onclick="toggleClose(this)">
+          <button
+            class="window-btn close-btn"
+            onclick="changeColor(this, '#ff5f56')"
+          >
             ×
           </button>
         </div>
@@ -881,44 +973,5 @@
         </div>
       </div>
     </section>
-    <!-- 상세페이지 이미지 모달 -->
-    <!-- <div
-      id="image-modal"
-      style="
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: rgba(0, 0, 0, 0.9);
-        z-index: 9999;
-        display: flex;
-        justify-content: center;
-        align-items: start;
-        padding: 50px 0;
-        overflow-y: auto;
-      "
-    >
-      <img
-        id="modal-image"
-        src=""
-        alt="상세페이지 이미지"
-        style="max-width: 1000px; width: 100%; height: auto"
-      />
-      <span
-        id="close-modal"
-        style="
-          position: fixed;
-          top: 20px;
-          right: 40px;
-          color: white;
-          font-size: 36px;
-          cursor: pointer;
-          user-select: none;
-        "
-        >&times;</span
-      >
-    </div> -->
   </body>
 </html>

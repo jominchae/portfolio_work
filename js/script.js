@@ -1,3 +1,6 @@
+let currentCodingProject = 1;
+const totalCodingProjects = 3;
+
 // ===== 페이지 로드 완료 후 실행 =====
 document.addEventListener("DOMContentLoaded", function () {
   initializePortfolio();
@@ -14,6 +17,23 @@ function initializePortfolio() {
   setupTrashIcon();
   setupPortfolioGallery(); // 포트폴리오 갤러리 초기화
   setupTouchNavigation(); // 터치 네비게이션 초기화
+}
+
+const codingSwiper = new Swiper(".cardnews-swiper", {
+  effect: "cards", // 카드 효과 적용
+  grabCursor: true, // 마우스 커서 모양 변경
+  // 필요한 옵션 추가 가능
+});
+
+function initializePortfolio() {
+  // 기존 설정들...
+  setupNavigation();
+  // ...
+  // Swiper 초기화 추가
+  const codingSwiper = new Swiper(".cardnews-swiper", {
+    effect: "cards",
+    grabCursor: true,
+  });
 }
 
 // ===== 네비게이션 설정 =====
@@ -126,56 +146,12 @@ function setupResumeButton() {
 setupResumeButton();
 
 // ===== 창 제어 버튼 설정 =====
-function setupWindowControls() {
-  const minimizeBtn = document.querySelector(
-    ".imac-frame-content .minimize-btn"
-  );
-  const maximizeBtn = document.querySelector(
-    ".imac-frame-content .maximize-btn"
-  );
-  const closeBtn = document.querySelector(".imac-frame-content .close-btn");
-
-  if (minimizeBtn) {
-    minimizeBtn.addEventListener("click", function () {
-      console.log("Minimize clicked");
-      this.style.backgroundColor = "#ffbd2e";
-      setTimeout(() => {
-        this.style.backgroundColor = "";
-      }, 200);
-    });
-  }
-
-  if (maximizeBtn) {
-    maximizeBtn.addEventListener("click", function () {
-      console.log("Maximize clicked");
-      this.style.backgroundColor = "#28ca42";
-      setTimeout(() => {
-        this.style.backgroundColor = "";
-      }, 200);
-    });
-  }
-
-  if (closeBtn) {
-    closeBtn.addEventListener("click", function () {
-      console.log("Close clicked");
-      this.style.backgroundColor = "#ff5f56";
-      setTimeout(() => {
-        this.style.backgroundColor = "";
-      }, 200);
-    });
-  }
+function changeColor(button, color) {
+  button.style.backgroundColor = color;
+  setTimeout(function () {
+    button.style.backgroundColor = "";
+  }, 200);
 }
-
-// 버튼이 존재하는지 확인
-console.log(document.querySelector(".minimize-btn"));
-console.log(document.querySelector(".maximize-btn"));
-console.log(document.querySelector(".close-btn"));
-
-// 클릭 이벤트가 작동하는지 확인
-document.querySelector(".minimize-btn").addEventListener("click", function () {
-  console.log("minimize button clicked");
-  this.classList.add("active");
-});
 
 // ===== 검색 버튼 설정 =====
 function setupSearchButton() {
@@ -191,19 +167,36 @@ function setupSearchButton() {
 
 // ===== 쓰레기통 아이콘 설정 =====
 function setupTrashIcon() {
-  const trashIcon = document.querySelector(".imac-trash-icon");
+  // querySelectorAll로 모든 쓰레기통 아이콘 선택
+  const trashIcons = document.querySelectorAll(".imac-trash-icon");
 
-  if (trashIcon) {
-    trashIcon.addEventListener("click", function () {
-      console.log("Trash icon clicked");
+  console.log(`쓰레기통 아이콘 개수: ${trashIcons.length}`);
+
+  trashIcons.forEach((trashIcon, index) => {
+    trashIcon.style.cursor = "pointer";
+
+    trashIcon.addEventListener("click", function (event) {
+      event.preventDefault();
+      event.stopPropagation();
+
+      console.log(`쓰레기통 ${index + 1} 클릭됨`);
       alert("휴지통 기능은 준비중입니다!");
     });
-  }
+  });
 }
+
+// DOM 로딩 완료 후 실행
+document.addEventListener("DOMContentLoaded", function () {
+  setupTrashIcon();
+  // setupPortfolioGallery();
+});
 
 // ===== 디자인 섹션 포트폴리오 갤러리 =====
 let currentdesignProject = 1;
 const totaldesignProjects = 9;
+// const totaldesignProjects = document.querySelectorAll(
+//   ".design-project-item"
+// ).length;
 
 // 포트폴리오 갤러리 설정
 function setupPortfolioGallery() {
@@ -212,13 +205,27 @@ function setupPortfolioGallery() {
   setupProjectImageClicks();
 
   // 도트 네비게이션 클릭 이벤트 설정
-  const dots = document.querySelectorAll(".portfolio-dots .dot");
-  dots.forEach((dot, index) => {
-    dot.addEventListener("click", function () {
-      goTodesignProject(index + 1);
-    });
+  const dotsContainer = document.querySelector(".portfolio-dots");
+  if (!dotsContainer) return;
+
+  dotsContainer.addEventListener("click", (event) => {
+    const clickedDot = event.target.closest(".dot");
+    if (!clickedDot) return;
+
+    const dots = Array.from(dotsContainer.querySelectorAll(".dot"));
+    const index = dots.indexOf(clickedDot);
+    if (index === -1) return;
+
+    console.log("✅ 디자인 도트 클릭됨:", index + 1);
+    goTodesignProject(index + 1);
   });
 }
+
+// DOMContentLoaded 이벤트에 setupPortfolioGallery 호출 추가
+document.addEventListener("DOMContentLoaded", function () {
+  setupPortfolioGallery();
+  // 그 외 초기화 함수도 이곳에서 호출 중이면 함께 호출 가능
+});
 
 // 프로젝트 변경 함수
 function changedesignProject(direction) {
@@ -462,12 +469,56 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
+function openContactModal() {
+  document.getElementById("contactModal").classList.add("active");
+  document.body.style.overflow = "hidden";
+}
+
+function closeContactModal() {
+  document.getElementById("contactModal").classList.remove("active");
+  document.body.style.overflow = "auto";
+}
+
+function handleContactSubmit(event) {
+  event.preventDefault();
+
+  // 실제 메시지 전송 로직을 여기에 구현
+  alert("메시지가 성공적으로 전송되었습니다! 빠른 시일 내에 답변드리겠습니다.");
+  closeContactModal();
+
+  // 폼 초기화
+  event.target.reset();
+}
+
+// 모달 외부 클릭 시 닫기
+document.getElementById("contactModal").addEventListener("click", function (e) {
+  if (e.target === this) {
+    closeContactModal();
+  }
+});
+
+// ESC 키로 모달 닫기
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape") {
+    closeContactModal();
+  }
+});
+
 // ===== 코딩 섹션 =====
-let currentCodingProject = 1;
-const totalCodingProjects = 3;
+// let currentCodingProject = 1;
+// const totalCodingProjects = 3;
 
 // 코딩 프로젝트 변경 함수
 function changeCodingProject(direction) {
+  // 변수들이 정의되어 있는지 확인
+  if (
+    typeof currentCodingProject === "undefined" ||
+    typeof totalCodingProjects === "undefined"
+  ) {
+    console.error("변수가 초기화되지 않았습니다");
+    return;
+  }
+
   const currentItem = document.querySelector(".coding-project-item.active");
   if (currentItem) {
     currentItem.classList.remove("active");
