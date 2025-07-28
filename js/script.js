@@ -71,38 +71,67 @@ function setupNavigation() {
 }
 
 // ===== START 버튼 설정 =====
+// function setupStartButton() {
+//   const startButton = document.getElementById("startBtn");
+
+//   if (startButton) {
+//     startButton.addEventListener("click", function () {
+//       // About 섹션으로 부드럽게 이동
+//       const aboutSection = document.getElementById("about");
+//       if (aboutSection) {
+//         aboutSection.scrollIntoView({
+//           behavior: "smooth",
+//           block: "center",
+//         });
+
+//         // 네비게이션 상태 업데이트
+//         document.querySelectorAll(".nav-link").forEach((link) => {
+//           link.classList.remove("active");
+//         });
+
+//         const aboutNavLink = document.querySelector('a[href="#about"]');
+//         if (aboutNavLink) {
+//           aboutNavLink.classList.add("active");
+//         }
+//       }
+
+//       // 클릭 효과 추가
+//       this.style.transform = "scale(0.95)";
+//       setTimeout(() => {
+//         this.style.transform = "scale(1)";
+//       }, 150);
+//     });
+//   }
+// }
+
 function setupStartButton() {
   const startButton = document.getElementById("startBtn");
 
-  if (startButton) {
-    startButton.addEventListener("click", function () {
-      // About 섹션으로 부드럽게 이동
-      const aboutSection = document.getElementById("about");
-      if (aboutSection) {
-        aboutSection.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
+  if (!startButton) return;
 
-        // 네비게이션 상태 업데이트
-        document.querySelectorAll(".nav-link").forEach((link) => {
-          link.classList.remove("active");
-        });
+  startButton.addEventListener("click", function () {
+    const aboutSection = document.getElementById("about");
+    if (aboutSection) {
+      aboutSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start", // "center" 대신 "start"로 변경해서 스크롤 위치 문제 해결
+      });
 
-        const aboutNavLink = document.querySelector('a[href="#about"]');
-        if (aboutNavLink) {
-          aboutNavLink.classList.add("active");
-        }
-      }
+      // 네비게이션 상태 업데이트
+      document
+        .querySelectorAll(".nav-link")
+        .forEach((link) => link.classList.remove("active"));
+      const aboutNavLink = document.querySelector('a[href="#about"]');
+      if (aboutNavLink) aboutNavLink.classList.add("active");
+    }
 
-      // 클릭 효과 추가
-      this.style.transform = "scale(0.95)";
-      setTimeout(() => {
-        this.style.transform = "scale(1)";
-      }, 150);
-    });
-  }
+    // 클릭 애니메이션
+    this.style.transform = "scale(0.95)";
+    setTimeout(() => (this.style.transform = "scale(1)"), 150);
+  });
 }
+
+document.addEventListener("DOMContentLoaded", setupStartButton);
 
 // ===== 스크롤 위치에 따라 네비게이션 활성화 =====
 function setupScrollActiveNav() {

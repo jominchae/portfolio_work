@@ -198,6 +198,9 @@ img {
 #startBtn {
   font-family: "Pixelify Sans", monospace !important;
   font-weight: 700;
+  position: relative;
+  z-index: 999;
+  pointer-events: auto;
 }
 
 .start-button {
