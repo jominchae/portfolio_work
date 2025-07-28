@@ -285,41 +285,13 @@
             <div class="coding-portfolio-header">
               <div class="coding-portfolio-counter">
                 <span id="current-coding-project">1</span> /
-                <span id="total-coding-projects">3</span>
+                <span id="total-coding-projects">2</span>
               </div>
             </div>
 
             <div class="coding-portfolio-gallery">
               <!-- 코딩 프로젝트 1 -->
               <div class="coding-project-item active" data-project="1">
-                <div class="coding-project-preview">
-                  <div class="coding-project-image">
-                    <div class="placeholder-image">
-                      <img src="images/clone_coding.jpg" alt="Clone Coding" />
-                    </div>
-                  </div>
-                  <div class="coding-project-info">
-                    <h3 class="coding-project-title">Clone Coding</h3>
-                    <p class="coding-project-description">
-                      HTML, CSS, JavaScript를 사용한 프로토타입 제작 제작
-                    </p>
-                    <div class="coding-project-tags">
-                      <span class="tag">HTML</span>
-                      <span class="tag">CSS</span>
-                      <span class="tag">JavaScript</span>
-                    </div>
-                    <button
-                      class="view-coding-project-btn"
-                      onclick="openCodingProject('project1')"
-                    >
-                      GitHub에서 보기
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <!-- 코딩 프로젝트 2 -->
-              <div class="coding-project-item" data-project="2">
                 <div class="coding-project-preview">
                   <div class="coding-project-image">
                     <div class="placeholder-image">
@@ -336,7 +308,7 @@
                       구조(UI)을 개선한 리디자인 프로젝트
                     </p>
                     <div class="coding-project-tags">
-                      <span class="tag">기여도 10%</span>
+                      <span class="tag">기여도 100%</span>
                       <span class="tag">HTML/CSS</span>
                       <span class="tag">JavaScript</span>
                     </div>
@@ -364,8 +336,8 @@
                 </div>
               </div>
 
-              <!-- 코딩 프로젝트 3 -->
-              <div class="coding-project-item" data-project="3">
+              <!-- 코딩 프로젝트 2 -->
+              <div class="coding-project-item" data-project="2">
                 <div class="coding-project-preview">
                   <div class="coding-project-image">
                     <div class="placeholder-image">
@@ -417,7 +389,7 @@
             <div class="coding-portfolio-dots">
               <span class="dot active" onclick="goToCodingProject(1)"></span>
               <span class="dot" onclick="goToCodingProject(2)"></span>
-              <span class="dot" onclick="goToCodingProject(3)"></span>
+              <!-- <span class="dot" onclick="goToCodingProject(3)"></span> -->
             </div>
           </div>
         </div>
@@ -493,12 +465,26 @@
                       <span class="tag">figma</span>
                       <!-- <span class="tag">USER FLOW OPTIMIZATION</span> -->
                     </div>
-                    <button
-                      class="view-project-btn"
-                      onclick="openFigma('project1')"
-                    >
-                      Figma에서 보기
-                    </button>
+                    <div class="button-group">
+                      <a
+                        class="view-project-btn"
+                        data-action="figma"
+                        data-project="project1"
+                        href=""
+                        target="_blank"
+                      >
+                        Figma에서 보기
+                      </a>
+                      <a
+                        class="view-project-btn"
+                        data-action="process"
+                        data-project="project1"
+                        href=""
+                        target="_blank"
+                      >
+                        제작프로세스 보기
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -576,9 +562,9 @@
                       href="images/editorial-design.pdf"
                       target="_blank"
                       class="view-project-btn"
-                      data-image=""
+                      data-image="images/editorial-design.pdf"
                     >
-                      상세페이지 보기
+                      디자인 보기
                     </a>
                   </div>
                 </div>
@@ -718,7 +704,7 @@
                       class="view-project-btn"
                       data-action="figma"
                       data-project="project7"
-                      href="https://www.figma.com/proto/OGH2s8j1Rt2pdNOfSVF1FO/4%EC%A1%B0-%EB%B0%A5%ED%94%8C%EB%A6%AD%EC%8A%A4-%EC%95%B1%EB%94%94%EC%9E%90%EC%9D%B8?page-id=163%3A1441&node-id=458-1320&p=f&viewport=-240%2C375%2C0.12&t=vq76r8RJNiyOSDld-1&scaling=min-zoom&content-scaling=fixed"
+                      href="https://www.figma.com/proto/ckdq6fMQEWG2GkqkE4n7Xz/%EB%9E%9C%EB%94%A9%ED%8E%98%EC%9D%B4%EC%A7%80?page-id=0%3A1&node-id=2-56&viewport=634%2C864%2C0.05&t=6kk9lFUoTKI4QDqR-1&scaling=min-zoom&content-scaling=fixed"
                       target="_blank"
                     >
                       랜딩페이지 보기

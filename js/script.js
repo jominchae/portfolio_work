@@ -1,5 +1,5 @@
 let currentCodingProject = 1;
-const totalCodingProjects = 3;
+const totalCodingProjects = 2;
 
 // ===== 페이지 로드 완료 후 실행 =====
 document.addEventListener("DOMContentLoaded", function () {
@@ -586,7 +586,7 @@ function updateCodingDots() {
 // 코딩 프로젝트 열기 함수
 function openCodingProject(projectId) {
   const projectLinks = {
-    project1: "https://github.com/your-username/responsive-website",
+    // project1: "https://github.com/your-username/responsive-website",
     project2: "https://github.com/your-username/portfolio-website",
     project3: "https://github.com/your-username/portfolio-website",
   };
