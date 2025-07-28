@@ -336,16 +336,30 @@
                       구조(UI)을 개선한 리디자인 프로젝트
                     </p>
                     <div class="coding-project-tags">
-                      <span class="tag">HTML</span>
-                      <span class="tag">CSS</span>
+                      <span class="tag">기여도 10%</span>
+                      <span class="tag">HTML/CSS</span>
                       <span class="tag">JavaScript</span>
                     </div>
-                    <button
-                      class="view-coding-project-btn"
-                      onclick="openCodingProject('project2')"
-                    >
-                      GitHub에서 보기
-                    </button>
+                    <div class="button-group">
+                      <a
+                        class="view-project-btn"
+                        data-action="figma"
+                        data-project="project2"
+                        href="https://www.airbnb.co.kr/"
+                        target="_blank"
+                      >
+                        기존
+                      </a>
+                      <a
+                        class="view-project-btn"
+                        data-action="process"
+                        data-project="project5"
+                        href="https://jominchae.github.io/Airbnb_work/"
+                        target="_blank"
+                      >
+                        리디자인
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -539,17 +553,11 @@
               <div class="project-item" data-project="3">
                 <div class="project-preview">
                   <div class="project-image">
-                    <div
-                      class="placeholder-image"
-                      style="
-                        background: linear-gradient(
-                          135deg,
-                          #4ecdc4 0%,
-                          #44a08d 100%
-                        );
-                      "
-                    >
-                      <span>브랜드 디자인</span>
+                    <div class="placeholder-image">
+                      <img
+                        src="images/editorial-design.jpg"
+                        alt="Editorial Design"
+                      />
                     </div>
                   </div>
                   <div class="project-info">
@@ -563,12 +571,15 @@
                       <span class="tag">Logo Design</span>
                       <span class="tag">Identity</span>
                     </div>
-                    <button
+                    <!--  버튼 클릭 시 모달 열림 -->
+                    <a
+                      href="images/editorial-design.pdf"
+                      target="_blank"
                       class="view-project-btn"
-                      onclick="openFigma('project3')"
+                      data-image=""
                     >
-                      Figma에서 보기
-                    </button>
+                      상세페이지 보기
+                    </a>
                   </div>
                 </div>
               </div>
