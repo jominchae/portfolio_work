@@ -222,7 +222,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // ===== 디자인 섹션 포트폴리오 갤러리 =====
 let currentdesignProject = 1;
-const totaldesignProjects = 9;
+const totaldesignProjects = 10;
 // const totaldesignProjects = document.querySelectorAll(
 //   ".design-project-item"
 // ).length;
@@ -300,22 +300,18 @@ function updatedesignProjectDisplay() {
   const currentProjectSpan = document.getElementById("current-project");
   const projectUrl = document.getElementById("project-url");
 
-  // 모든 프로젝트 아이템 숨기기
+  // 프로젝트 수 체크
+  if (!projectItems.length || currentdesignProject > projectItems.length)
+    return;
+
+  // 모든 프로젝트 숨기고 현재 프로젝트 표시
   projectItems.forEach((item, index) => {
-    if (index === currentdesignProject - 1) {
-      item.classList.add("active");
-    } else {
-      item.classList.remove("active");
-    }
+    item.classList.toggle("active", index === currentdesignProject - 1);
   });
 
   // 도트 네비게이션 업데이트
   dots.forEach((dot, index) => {
-    if (index === currentdesignProject - 1) {
-      dot.classList.add("active");
-    } else {
-      dot.classList.remove("active");
-    }
+    dot.classList.toggle("active", index === currentdesignProject - 1);
   });
 
   // 카운터 업데이트
@@ -323,7 +319,7 @@ function updatedesignProjectDisplay() {
     currentProjectSpan.textContent = currentdesignProject;
   }
 
-  // URL 표시 업데이트
+  // URL 표시 업데이트 (원하는 텍스트로 수정 가능)
   if (projectUrl) {
     projectUrl.textContent = "DESIGN PAGE";
   }
