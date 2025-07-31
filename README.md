@@ -28,6 +28,7 @@
 ## 📁 Design Works
 
 ### 💻 웹사이트 리디자인 및 클론 코딩
+
 - 🔄 [Airbnb 웹 리디자인](https://jominchae.github.io/Airbnb_work/)  
   (기존 사이트: [airbnb.co.kr](https://www.airbnb.co.kr/))
 
@@ -35,40 +36,59 @@
   (기존 사이트: [samsungfire.com](https://www.samsungfire.com/))
 
 ### 📱 모바일 앱 UI 디자인
+
 - 🤝 [협업 프로젝트 – 밥플릭스 앱](https://www.figma.com/proto/OGH2s8j1Rt2pdNOfSVF1FO/4%EC%A1%B0-%EB%B0%A5%ED%94%8C%EB%A6%AD%EC%8A%A4-%EC%95%B1%EB%94%94%EC%9E%90%EC%9D%B8?page-id=163%3A1441&node-id=458-1320&p=f&viewport=-240%2C375%2C0.12&t=vq76r8RJNiyOSDld-1&scaling=min-zoom&content-scaling=fixed)  
-- 🛠️ 개인 앱 기획 – *진행 중*
+- 🛠️ 개인 앱 기획 – _진행 중_
 
 ### 🎨 편집디자인 & 브랜드 디자인
+
 - 📦 Editorial Design (로고, 컬러, 타이포그래피)  
-  → `editorial-design.pdf` (PDF 업로드 필요)
+  → [PDF 보기](https://github.com/jominchae/portfolio_work/blob/main/images/editorial-design.pdf?raw=true)
 
 ### 🛍️ 상세페이지 & 쇼핑몰
-- 🛒 [상세페이지 리디자인](https://hjmjjy.cafe24.com/product/%EC%BD%94%EC%BD%94%EB%8F%84%EB%A5%B4-%EC%8B%9C%EA%B7%B8%EB%8B%88%EC%B2%98-%EB%94%94%ED%93%A8%EC%A0%80/27/category/1/display/2/)
+
+- 🛒 [상세페이지 리디자인]  
+  기존: https://cocodor.co.kr/product/%EA%B3%B5%EC%8B%9D%EB%AA%B0-%ED%8A%B9%EB%B3%84%EA%B5%AC%EC%84%B1-%EC%BD%94%EC%BD%94%EB%8F%84%EB%A5%B4-%EB%94%94%ED%93%A8%EC%A0%80-200ml-x-3%EA%B0%9C%EB%A6%AC%ED%95%84%EC%95%A1-200mlx3/2567/category/439/display/1/  
+  리디자인: https://hjmjjy.cafe24.com/product/%EC%BD%94%EC%BD%94%EB%8F%84%EB%A5%B4-%EC%8B%9C%EA%B7%B8%EB%8B%88%EC%B2%98-%EB%94%94%ED%93%A8%EC%A0%80/27/category/1/display/2/
+
+- 🆕 추가 상세페이지 리디자인  
+  기존: https://lukt.co.kr/26/?idx=66  
+  리디자인: [PDF 보기](https://github.com/jominchae/portfolio_work/blob/main/images/re-design-lukt-detail.pdf?raw=true)
 
 - 🛍️ [카페24 쇼핑몰 디자인](https://hjmjjy.cafe24.com/)
 
 ### 🖥️ 웹페이지 협업 리디자인
-- 🤝 [협업 웹 리디자인 (Figma 링크)](https://www.figma.com/proto/U0ceDSN70s1XiFWomTLrTE/6.12~6.18-%ED%98%91%EC%97%85-%EC%9B%B9-%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8?node-id=376-15&p=f&t=csyUWeGvlUb7HX4K-1&scaling=min-zoom&content-scaling=fixed&page-id=376%3A12)
+
+- 🤝 [협업 웹 리디자인 (Figma 링크)](http://m.hueree.com/index.php)  
+  기존: https://www.figma.com/proto/U0ceDSN70s1XiFWomTLrTE/6.12~6.18-%ED%98%91%EC%97%85-%EC%9B%B9-%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8?node-id=376-15&p=f&t=csyUWeGvlUb7HX4K-1&scaling=min-zoom&content-scaling=fixed&page-id=376%3A12
 
 ### 🚀 랜딩페이지 디자인
+
 - 🔗 [랜딩페이지 디자인 (Figma)](https://www.figma.com/proto/ckdq6fMQEWG2GkqkE4n7Xz/%EB%9E%9C%EB%94%A9%ED%8E%98%EC%9D%B4%EC%A7%80?page-id=0%3A1&node-id=2-56&viewport=634%2C864%2C0.05&t=6kk9lFUoTKI4QDqR-1&scaling=min-zoom&content-scaling=fixed)
 
 ---
 
 ## 📫 Contact
 
-- 📧 Email: [minchae617@naver.com](mailto:minchae617@naver.com)
+- 📧 Email: [minchae617@naver.com](mailto:minchae617@naver.com)  
 - 🌐 [포트폴리오 메인 사이트](https://portfolio-work-nine.vercel.app/)
 
 ---
 
-## 🖼 이미지 / 카드뉴스 파일은 어떻게 보여줄까?
+## 🖼 카드뉴스 디자인
 
-### ➕ 방법 1: GitHub에 이미지 업로드
+<div align="center">
+  <img src="https://github.com/jominchae/portfolio_work/blob/main/images/cardnews1.jpg?raw=true" width="200" />
+  <img src="https://github.com/jominchae/portfolio_work/blob/main/images/cardnews2.jpg?raw=true" width="200" />
+  <img src="https://github.com/jominchae/portfolio_work/blob/main/images/cardnews3.jpg?raw=true" width="200" />
+  <img src="https://github.com/jominchae/portfolio_work/blob/main/images/cardnews4.jpg?raw=true" width="200" />
+</div>
 
-1. `README.md`가 들어있는 GitHub 리포지토리로 이동  
-2. `drag & drop`으로 `.jpg`, `.png`, `.pdf` 파일 업로드  
-3. GitHub가 자동으로 마크다운 이미지 주소를 만들어 줌  
-   예:
-   ```markdown
-   ![카드뉴스](https://github.com/yourusername/yourrepo/blob/main/images/card1.jpg)
+<div align="center" style="margin-top:20px;">
+  <img src="https://github.com/jominchae/portfolio_work/blob/main/images/card1.jpg?raw=true" width="200" />
+  <img src="https://github.com/jominchae/portfolio_work/blob/main/images/card2.jpg?raw=true" width="200" />
+  <img src="https://github.com/jominchae/portfolio_work/blob/main/images/card3.jpg?raw=true" width="200" />
+  <img src="https://github.com/jominchae/portfolio_work/blob/main/images/card4.jpg?raw=true" width="200" />
+  <img src="https://github.com/jominchae/portfolio_work/blob/main/images/card5.jpg?raw=true" width="200" />
+  <img src="https://github.com/jominchae/portfolio_work/blob/main/images/card6.jpg?raw=true" width="200" />
+</div>
