@@ -74,7 +74,8 @@
 
 ## 📫 Contact
 
-- # 📧 Email: [minchae617@naver.com](mailto:minchae617@naver.com)
+- 📧 Email: <span style="font-size:14px;"><a href="mailto:minchae617@naver.com">minchae617@naver.com</a></span>
+
 - 🌐 [포트폴리오 메인 사이트](https://portfolio-work-nine.vercel.app/)
 
 ---
@@ -90,7 +91,6 @@
 
 ## 🖼 브랜드 콘텐츠 디자인
 
-=======
 <img src="https://github.com/jominchae/portfolio_work/blob/main/images/card1.jpg?raw=true" width="200" />
 <img src="https://github.com/jominchae/portfolio_work/blob/main/images/card2.jpg?raw=true" width="200" />
 <img src="https://github.com/jominchae/portfolio_work/blob/main/images/card3.jpg?raw=true" width="200" />
