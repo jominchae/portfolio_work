@@ -68,14 +68,6 @@
 
 ---
 
-## 📫 Contact
-
-- 📧 Email: <span style="font-size:14px;"><a href="mailto:minchae617@naver.com">minchae617@naver.com</a></span>
-
-- 🌐 [포트폴리오 메인 사이트](https://portfolio-work-nine.vercel.app/)
-
----
-
 ## 🖼 카드뉴스 디자인
 
 <div align="center">
@@ -95,3 +87,11 @@
   <img src="https://github.com/jominchae/portfolio_work/blob/main/images/card5.jpg?raw=true" width="200" />
   <img src="https://github.com/jominchae/portfolio_work/blob/main/images/card6.jpg?raw=true" width="200" />
 </div>
+
+---
+
+## 📫 Contact
+
+- 📧 Email: <span style="font-size:14px;"><a href="mailto:minchae617@naver.com">minchae617@naver.com</a></span>
+
+- 🌐 [포트폴리오 메인 사이트](https://portfolio-work-nine.vercel.app/)
