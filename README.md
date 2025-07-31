@@ -3,7 +3,10 @@
     </div>
     <div style="text-align: left;"> 
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 안녕하세요. 조민채입니다. </h2>  
-    <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> 조민채의 포트폴리오 페이지 입니다.</li>다양한 디자인 작업 및 UI/UX 퍼블리싱 작업물 확인 하실 수 있습니다. </div> 
+    <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33;"> 
+저는 사용자 경험을 고려한 **UI/UX 웹디자인**에 관심이 많으며,
+다양한 웹 디자인 시안 제작과 퍼블리싱 경험을 통해 성장하고 있습니다.
+실제 사용자에게 의미 있는 디자인을 만드는 것을 목표로 합니다. </div> 
     </div>
     <div style="text-align: left;">
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 🛠️ Tech Stacks </h2> <br> 
