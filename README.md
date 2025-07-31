@@ -38,10 +38,10 @@
 ### 📱 모바일 앱 UI 디자인
 
 <<<<<<< HEAD
+
+- # 🤝 [협업 프로젝트 – 밥플릭스 앱](https://www.figma.com/proto/OGH2s8j1Rt2pdNOfSVF1FO/4%EC%A1%B0-%EB%B0%A5%ED%94%8C%EB%A6%AD%EC%8A%A4-%EC%95%B1%EB%94%94%EC%9E%90%EC%9D%B8?page-id=163%3A1441&node-id=458-1320&p=f&viewport=-240%2C375%2C0.12&t=vq76r8RJNiyOSDld-1&scaling=min-zoom&content-scaling=fixed)
 - 🤝 [협업 프로젝트 – 밥플릭스 앱](https://www.figma.com/proto/OGH2s8j1Rt2pdNOfSVF1FO/4%EC%A1%B0-%EB%B0%A5%ED%94%8C%EB%A6%AD%EC%8A%A4-%EC%95%B1%EB%94%94%EC%9E%90%EC%9D%B8?page-id=163%3A1441&node-id=458-1320&p=f&viewport=-240%2C375%2C0.12&t=vq76r8RJNiyOSDld-1&scaling=min-zoom&content-scaling=fixed)
-=======
-- 🤝 [협업 프로젝트 – 밥플릭스 앱](https://www.figma.com/proto/OGH2s8j1Rt2pdNOfSVF1FO/4%EC%A1%B0-%EB%B0%A5%ED%94%8C%EB%A6%AD%EC%8A%A4-%EC%95%B1%EB%94%94%EC%9E%90%EC%9D%B8?page-id=163%3A1441&node-id=458-1320&p=f&viewport=-240%2C375%2C0.12&t=vq76r8RJNiyOSDld-1&scaling=min-zoom&content-scaling=fixed)  
->>>>>>> 9d85dbcc7b1f6b66bb2d42d6cef3fcd48ccdd905
+  > > > > > > > 9d85dbcc7b1f6b66bb2d42d6cef3fcd48ccdd905
 - 🛠️ 개인 앱 기획 – _진행 중_
 
 ### 🎨 편집디자인 & 브랜드 디자인
@@ -74,11 +74,7 @@
 
 ## 📫 Contact
 
-<<<<<<< HEAD
-- 📧 Email: [minchae617@naver.com](mailto:minchae617@naver.com)
-=======
-- 📧 Email: [minchae617@naver.com](mailto:minchae617@naver.com)  
->>>>>>> 9d85dbcc7b1f6b66bb2d42d6cef3fcd48ccdd905
+- # 📧 Email: [minchae617@naver.com](mailto:minchae617@naver.com)
 - 🌐 [포트폴리오 메인 사이트](https://portfolio-work-nine.vercel.app/)
 
 ---
@@ -92,16 +88,14 @@
   <img src="https://github.com/jominchae/portfolio_work/blob/main/images/cardnews4.jpg?raw=true" width="200" />
 </div>
 
-<<<<<<< HEAD
 ## 🖼 브랜드 콘텐츠 디자인
 
 =======
->>>>>>> 9d85dbcc7b1f6b66bb2d42d6cef3fcd48ccdd905
-<div align="center" style="margin-top:20px;">
-  <img src="https://github.com/jominchae/portfolio_work/blob/main/images/card1.jpg?raw=true" width="200" />
-  <img src="https://github.com/jominchae/portfolio_work/blob/main/images/card2.jpg?raw=true" width="200" />
-  <img src="https://github.com/jominchae/portfolio_work/blob/main/images/card3.jpg?raw=true" width="200" />
-  <img src="https://github.com/jominchae/portfolio_work/blob/main/images/card4.jpg?raw=true" width="200" />
-  <img src="https://github.com/jominchae/portfolio_work/blob/main/images/card5.jpg?raw=true" width="200" />
-  <img src="https://github.com/jominchae/portfolio_work/blob/main/images/card6.jpg?raw=true" width="200" />
+<img src="https://github.com/jominchae/portfolio_work/blob/main/images/card1.jpg?raw=true" width="200" />
+<img src="https://github.com/jominchae/portfolio_work/blob/main/images/card2.jpg?raw=true" width="200" />
+<img src="https://github.com/jominchae/portfolio_work/blob/main/images/card3.jpg?raw=true" width="200" />
+<img src="https://github.com/jominchae/portfolio_work/blob/main/images/card4.jpg?raw=true" width="200" />
+<img src="https://github.com/jominchae/portfolio_work/blob/main/images/card5.jpg?raw=true" width="200" />
+<img src="https://github.com/jominchae/portfolio_work/blob/main/images/card6.jpg?raw=true" width="200" />
+
 </div>
