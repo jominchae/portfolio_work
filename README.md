@@ -1,3 +1,19 @@
+<style>
+  img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+
+  img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+  }
+</style>
+
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:fe81ad,100:ffcb3d&height=180&text=Portfolio&animation=scaleIn&fontColor=000000&fontSize=50" />
 </div>
