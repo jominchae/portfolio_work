@@ -37,11 +37,7 @@
 
 ### 📱 모바일 앱 UI 디자인
 
-<<<<<<< HEAD
-
-- # 🤝 [협업 프로젝트 – 밥플릭스 앱](https://www.figma.com/proto/OGH2s8j1Rt2pdNOfSVF1FO/4%EC%A1%B0-%EB%B0%A5%ED%94%8C%EB%A6%AD%EC%8A%A4-%EC%95%B1%EB%94%94%EC%9E%90%EC%9D%B8?page-id=163%3A1441&node-id=458-1320&p=f&viewport=-240%2C375%2C0.12&t=vq76r8RJNiyOSDld-1&scaling=min-zoom&content-scaling=fixed)
 - 🤝 [협업 프로젝트 – 밥플릭스 앱](https://www.figma.com/proto/OGH2s8j1Rt2pdNOfSVF1FO/4%EC%A1%B0-%EB%B0%A5%ED%94%8C%EB%A6%AD%EC%8A%A4-%EC%95%B1%EB%94%94%EC%9E%90%EC%9D%B8?page-id=163%3A1441&node-id=458-1320&p=f&viewport=-240%2C375%2C0.12&t=vq76r8RJNiyOSDld-1&scaling=min-zoom&content-scaling=fixed)
-  > > > > > > > 9d85dbcc7b1f6b66bb2d42d6cef3fcd48ccdd905
 - 🛠️ 개인 앱 기획 – _진행 중_
 
 ### 🎨 편집디자인 & 브랜드 디자인
@@ -51,15 +47,15 @@
 
 ### 🛍️ 상세페이지 & 쇼핑몰
 
-- 🛒 [상세페이지 리디자인]  
+- 🛒 [코코도르 디퓨저 상세페이지 리디자인]  
   기존: https://cocodor.co.kr/product/%EA%B3%B5%EC%8B%9D%EB%AA%B0-%ED%8A%B9%EB%B3%84%EA%B5%AC%EC%84%B1-%EC%BD%94%EC%BD%94%EB%8F%84%EB%A5%B4-%EB%94%94%ED%93%A8%EC%A0%80-200ml-x-3%EA%B0%9C%EB%A6%AC%ED%95%84%EC%95%A1-200mlx3/2567/category/439/display/1/  
   리디자인: https://hjmjjy.cafe24.com/product/%EC%BD%94%EC%BD%94%EB%8F%84%EB%A5%B4-%EC%8B%9C%EA%B7%B8%EB%8B%88%EC%B2%98-%EB%94%94%ED%93%A8%EC%A0%80/27/category/1/display/2/
 
-- 🆕 추가 상세페이지 리디자인  
+- 🆕 [룩트 요거트 상세페이지 리디자인]  
   기존: https://lukt.co.kr/26/?idx=66  
   리디자인: [PDF 보기](https://github.com/jominchae/portfolio_work/blob/main/images/re-design-lukt-detail.pdf?raw=true)
 
-- 🛍️ [카페24 쇼핑몰 디자인](https://hjmjjy.cafe24.com/)
+- 🛍️ [카페24 라부부 쇼핑몰 디자인](https://hjmjjy.cafe24.com/)
 
 ### 🖥️ 웹페이지 협업 리디자인
 
