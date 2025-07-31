@@ -91,11 +91,11 @@
 
 ## 🖼 브랜드 콘텐츠 디자인
 
-<img src="https://github.com/jominchae/portfolio_work/blob/main/images/card1.jpg?raw=true" width="200" />
-<img src="https://github.com/jominchae/portfolio_work/blob/main/images/card2.jpg?raw=true" width="200" />
-<img src="https://github.com/jominchae/portfolio_work/blob/main/images/card3.jpg?raw=true" width="200" />
-<img src="https://github.com/jominchae/portfolio_work/blob/main/images/card4.jpg?raw=true" width="200" />
-<img src="https://github.com/jominchae/portfolio_work/blob/main/images/card5.jpg?raw=true" width="200" />
-<img src="https://github.com/jominchae/portfolio_work/blob/main/images/card6.jpg?raw=true" width="200" />
-
+<div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
+  <img src="https://github.com/jominchae/portfolio_work/blob/main/images/card1.jpg?raw=true" width="200" />
+  <img src="https://github.com/jominchae/portfolio_work/blob/main/images/card2.jpg?raw=true" width="200" />
+  <img src="https://github.com/jominchae/portfolio_work/blob/main/images/card3.jpg?raw=true" width="200" />
+  <img src="https://github.com/jominchae/portfolio_work/blob/main/images/card4.jpg?raw=true" width="200" />
+  <img src="https://github.com/jominchae/portfolio_work/blob/main/images/card5.jpg?raw=true" width="200" />
+  <img src="https://github.com/jominchae/portfolio_work/blob/main/images/card6.jpg?raw=true" width="200" />
 </div>
